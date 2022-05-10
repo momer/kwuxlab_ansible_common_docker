@@ -8,7 +8,7 @@
     - vars.yml
     - version.yml
   tags:
-    - kwuxlab_common_docker
+    - kwuxlab_ansible_common_docker
   pre_tasks:
     - name: Collect facts
       ansible.builtin.setup:
