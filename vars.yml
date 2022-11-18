@@ -30,11 +30,13 @@ target_docker_edition: 'ce'
 #
 # and https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/amd64/
 # for releases on ubuntu 18.04
+# and https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/amd64/
+# for releases on ubuntu 20.04
 #
-# and finally, vagrant ssh node1
+# Finally, vagrant ssh node1
 # and sudo apt-cache policy docker-ce
 # to find available versions
-target_docker_engine_install_version: '5:20.10.3~3-0~ubuntu-bionic'
+target_docker_engine_install_version: '5:20.10.21~3-0~ubuntu-focal'
 target_docker_package: "docker-{{ docker_edition }}={{ docker_engine_install_version }}"
 target_docker_package_state: present
 
